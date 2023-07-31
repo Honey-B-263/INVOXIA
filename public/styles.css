@@ -1,0 +1,156 @@
+/* Reset styles for better cross-browser consistency */
+html, body, header, main, footer {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    line-height: 1.6;
+    
+  }
+  
+  .header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .header h1 {
+    margin: 0;
+  }
+  
+  .header nav {
+    margin-top: 10px;
+  }
+  
+  .header nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .header nav a:hover {
+    background-color: #555;
+  }
+  
+  main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+  }
+  
+  main h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+  }
+
+
+
+/* Updated styles for the card container */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 40%;
+  margin-bottom: 10px;
+}
+
+.add-to-cart{
+  display: block;
+  width: 100px;
+  padding: 12px 20px;
+  margin: 20px auto;
+  font-size: 11px;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.card-content {
+  text-align: center;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .card {
+    width: 150px;
+  }
+}
+
+.chk{
+  display: flex;
+  align-items: flex-end;
+  justify-content: end;
+}
+
+#total-amount{
+  font-weight: bolder;
+  background: linear-gradient(yellow, orange);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#checkout-button {
+  display: block;
+  width: 150px;
+  padding: 12px 20px;
+  margin: 20px auto;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#checkout-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+
+  
+  .footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;left: 0;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  .footer p {
+    margin: 0;
+  }
+  
+  /* Customize the look of products, services, and cart sections as needed */
+  

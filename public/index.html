@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Billing System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <h1>Billing System</h1>
+    <nav>
+      <a onclick="goToP()" id="p-btn">Products</a>
+      <a onclick="goToS()" id="s-btn">Services</a>
+      <a onclick="goToC()" id="c-btn">Cart</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home">
+      <h2>Welcome to Billing System</h2>
+      <p>Click on the above buttons to view the products, services and cart.</p>
+    </section>
+    <section id="products">
+      <h2>Products</h2>
+      <ul class="card-container"></ul>
+    </section>
+
+    <section id="services" style = "display: None;"> 
+      <h2>Services</h2>
+      <ul class="card-container"></ul>
+    </section>
+
+    <section id="cart" style = "display: None;">
+      <h2>Cart</h2>
+      <p><span id="total-amount" style="display:none;"></span></p>
+      <div class="chk">
+        <button id="checkout-button" disabled>Checkout</button>
+      </div>
+      <ul class="card-container" id="cart-items"></ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2023 Billing System</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
