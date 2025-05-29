@@ -1,4 +1,5 @@
-#INVOXIA
+# 🌐 INVOXIA
+---
 A scalable and tax-compliant backend billing system built with Node.js and Express.js to manage user orders, product/service carts, and tax-based billing computations.
 
 ## 🔧 Features
