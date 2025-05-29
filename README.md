@@ -35,38 +35,36 @@ A scalable and tax-compliant backend billing system built with Node.js and Expre
 
 ## 📁 Project Structure
 
-plotline-zentrabill/
-├── controllers/
-│ ├── cartController.js
-│ ├── orderController.js
-│ ├── productController.js
-│ ├── serviceController.js
-│ └── userController.js
+├── controllers/            # Route handlers for business logic
+│   ├── cartController.js       # Handles cart add/remove/clear logic
+│   ├── orderController.js      # Manages order confirmation and admin views
+│   ├── productController.js    # Exposes product-related endpoints
+│   ├── serviceController.js    # Exposes service-related endpoints
+│   └── userController.js       # Handles user registration and login
 │
-├── middleware/
-│ ├── authMiddleware.js
-│ └── errorMiddleware.js
+├── middleware/             # Reusable middleware
+│   ├── authMiddleware.js       # JWT-based auth protection
+│   └── errorMiddleware.js      # Centralized error handling
 │
-├── models/
-│ ├── cartItem.js
-│ ├── order.js
-│ ├── product.js
-│ ├── service.js
-│ └── user.js
+├── models/                 # Mongoose schemas
+│   ├── cartItem.js             # Represents cart items
+│   ├── order.js                # Represents confirmed orders
+│   ├── product.js              # Product schema with pricing
+│   ├── service.js              # Service schema with pricing
+│   └── user.js                 # User model with auth fields
 │
-├── public/
-│ ├── index.html
-│ ├── p1.png
-│ └── s1.png
+├── public/                 # Static files (images, etc.)
+│   ├── index.html
+│   ├── p1.png
+│   └── s1.png
 │
-├── app.js
-├── .env
-├── package.json
-└── README.md
+├── app.js                  # Entry point of the application
+├── .env                    # Environment variables
+├── package.json            # Dependencies and scripts
+└── README.md               # Project documentation
 
 yaml
-Copy
-Edit
+
 
 ---
 
