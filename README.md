@@ -35,6 +35,8 @@ A scalable and tax-compliant backend billing system built with Node.js and Expre
 
 ## 📁 Project Structure
 
+```
+
 ├── controllers/            # Route handlers for business logic
 │   ├── cartController.js       # Handles cart add/remove/clear logic
 │   ├── orderController.js      # Manages order confirmation and admin views
@@ -63,9 +65,10 @@ A scalable and tax-compliant backend billing system built with Node.js and Expre
 ├── package.json            # Dependencies and scripts
 └── README.md               # Project documentation
 
+```
+
+
 yaml
-
-
 ---
 
 ## 🛠️ Tech Stack
